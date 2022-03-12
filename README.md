@@ -8,6 +8,9 @@ guesses.
 ### Usage
 
 **Launch**
+
+Program made with Ruby programming language (version 2.7.0p0).
+
 ```
 $ ruby main.rb
 ```

@@ -15,7 +15,7 @@ class Game
   # Возвращает массив букв, введенных пользователем, но отсутствующих в
   # загаданном слове (ошибочные буквы)
   def errors
-       @user_guesses - normalized_letters
+    @user_guesses - normalized_letters
   end
 
   # Возвращает количество ошибок, сделанных пользователем
@@ -33,13 +33,13 @@ class Game
   # массиве на соответствующем месте находится nil. Этот массив нужен методу
   # экземпляра класса ConsoleInterface для вывода слова на игровом табло.
   def letters_to_guess
-      @letters.map do |letter|
-        if @user_guesses.include?(normalize_letter(letter))
-         letter
-        else
-          nil
-        end
+    @letters.map do |letter|
+      if @user_guesses.include?(normalize_letter(letter))
+        letter
+      else
+        nil
       end
+    end
   end
 
   # Возвращает true, если у пользователя не осталось ошибок, т.е. игра проиграна
@@ -78,7 +78,7 @@ class Game
 
   # Возвращает true, если не осталось неотгаданных букв (пользователь выиграл)
   def won?
-      (normalized_letters - @user_guesses).empty?
+    (normalized_letters - @user_guesses).empty?
   end
 
   # Возвращает загаданное слово, склеивая его из загаданных букв
