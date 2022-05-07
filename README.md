@@ -11,8 +11,15 @@ guesses.
 
 Program made with Ruby programming language (version 2.7.0p0).
 
+This program also use Colorize gem, so first thing you should:
+
 ```
-$ ruby main.rb
+$ bundle install
+```
+and then to start the program:
+
+```
+$ bundle exec ruby main.rb
 ```
 **Settings**
 
